@@ -9,6 +9,9 @@ header{
 .font-tam{
   font-size: 3.5rem;
 }
+.font-type{
+  font-family: 'Kumbh Sans', sans-serif;
+}
 
 @media handheld, only screen and (max-width: 767px) {
   .display-off {

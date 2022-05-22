@@ -4,6 +4,11 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ header{
+  border-bottom-width: 7px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, #82CA6F, #75C8F2, #9071AF, #B65CA0, #F8BE63) 1;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

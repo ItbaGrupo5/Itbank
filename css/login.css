@@ -79,10 +79,35 @@ header{
   user-select: none;
 }
 
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+=======
+.item input {
+  position: relative;
+  left: 20px;
+  width: 400px;
+  height: 35px;
+  border-radius: 10px;
+  border-color: #5a407a;
+  background-color: ;
+}
+.btn {
+  width: 242px;
+  height: 54px;
+  border-radius: 18px;
+  background-color: #5a407a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-position {
+  position: relative;
+  left: 129px;
+  top: 80px;
+
 }
 
 .b-example-divider {

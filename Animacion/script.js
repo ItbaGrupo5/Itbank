@@ -8,7 +8,7 @@ loader.style.opacity=0;
 },3000);})
 
 function pagina(){
-    location.href="index.html"
+    location.href="home.html"
 }
 setTimeout(pagina(),{},5000)
 

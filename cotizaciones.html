@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homebanking Itbank</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="shortcut icon" href="./images/icologo.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/f69b4029b3.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizacion divisas Itbank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="shortcut icon" href="./images/icologo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/f69b4029b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-    <div class="container">
+      <div class="container">
         <div class="row align-items-center">
-            <div class="col-2">
-                <div class="d-inline-flex flex-row my-2 align-items-center border border-secondary border-2 rounded-pill px-3">
-                <i class="fa-solid fa-bars"></i>
-                  <button
+          <div class="col-2">
+            <div
+              class="d-inline-flex flex-row my-2 align-items-center border border-secondary border-2 rounded-pill px-3"
+            >
+              <i class="fa-solid fa-bars"></i>
+              <button
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -42,7 +55,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                       <h4 class="p-2 fw-bold">Menú</h4>
+                      <h4 class="p-2 fw-bold">Menú</h4>
                     </a>
                     <ul
                       class="dropdown-menu dropdown-menu-dark"
@@ -390,255 +403,106 @@
                   </li>
                 </ul>
               </div>
-                
             </div>
+          </div>
+          <div class="col-8 text-center">
+            <img
+              src="Images/logo-ITBANK.png"
+              alt="Logo del itbank"
+              height="30"
+            />
+          </div>
+          <div class="col-2 pagination justify-content-end">
+            <div
+              id="perfil"
+              class="d-inline-flex flex-row my-2 px-3 align-items-center rounded-pill"
+            >
+              <img
+                src="Images/sofia.png"
+                alt="Imagen de usuario"
+                id="user-photo"
+                class="rounded-circle"
+                width="40"
+                height="40"
+              />
+              <h4 id="nombre-perfil" class="p-2 fw-bold">Sofía</h4>
+              <i id="icono-perfil" class="fa-solid fa-angle-right"></i>
             </div>
-            <div class="col-8 text-center">
-                <img src="Images/logo-ITBANK.png" alt="Logo del itbank" height="30"/>
-            </div>
-            <div class="col-2 pagination justify-content-end">
-                <div id="perfil" class="d-inline-flex flex-row my-2 px-3 align-items-center rounded-pill">
-                <img src="Images/sofia.png" alt="Imagen de usuario" id="user-photo" class="rounded-circle" width="40" height="40" />
-                <h4 id="nombre-perfil" class="p-2 fw-bold ">Sofía</h4>
-                <i id="icono-perfil" class="fa-solid fa-angle-right"></i>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>    
+      </div>
     </header>
-    <section class="container">
-        <!-- encabezado de la página-->
-        <div class="row d-flex align-items-center">
-            <div class="col-6 mt-4 mb-3">
-                <h1 class="fw-bold">Hola Sofía</h1>
+    <main>
+      <h1 class="fw-bold d-flex justify-content-center">Cotizaciones</h1>
+      <div class="row m-2 mt-4">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar Oficial</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolaroficial-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolaroficial-venta">300,00</p></h2>
+              </div>
             </div>
-            <div class="col-6 mt-4 mb-3">
-                <div class="buscador">
-                    <input type="search" id="search" placeholder="Buscar operaciones, servicios y consultas" />
-                    <button class="icon-search"><i class="fa fa-search"></i></button>
-                </div>
-                
-            </div>
+          </article>
         </div>
-            <!-- cards cuenta-->
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 mb-3">
-                    <article class="card card-black px-2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="card-title fw-bold">045-654753/8</h3>
-                                <a href="#" class="boton-icono btn btn-light rounded-circle">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <h6>CAJA DE AHORROS EN PESOS</h4>
-                       
-                            <h4 class="saldo-cuenta text-end"><strong>$ 15.000,00</strong></h4>
-                            
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">Luz - Edenor</h3>
-                            <h6>SERVICIO FRECUENTE</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 937,57</strong></p>
-                                <p class="fecha text-end fw-bold"><small>Vence el 17/05</small></p>
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Pagar</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">SUBE</h3>
-                            <p>SERVICIO FRECUENTE</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 300,00</strong></p>
-                                
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Repetir carga</a>
-                        </div>
-                    </article>
-                </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar Blue</h3>
+              <div  class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolarblue-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolarblue-venta">300,00</p></h2>
+              </div>
             </div>
-
-        <!-- accesos directos-->
-        <h2 class="my-3">Accesos directos</h2>
-        <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-arrow-right-arrow-left mx-3"></i>
-                        <h4>Transferencias</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-wallet mx-3"></i>
-                        <h4>Pago de servicios</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-piggy-bank mx-3"></i>
-                        <h4>Inversiones</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-money-check-dollar mx-3"></i>
-                        <h4>Préstamos</h4>
-                    </a>
-                </div>
+          </article>
         </div>
-
-        <!-- ult movimientos + carousel-->
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3 px-2">
-                <h2 class="my-3">Últimos movimientos</h2>
-                
-                    <div class="list-group">
-                        <a href="#" class="list-group-item mb-2">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1 fw-bold">Compra con tarjeta de débito</h5>
-                            <small>16 Mayo 15:20hs</small>
-                          </div>
-                          <p class="mb-1">Garbarino - tarj nro. 6842</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Transferencia recibida</h5>
-                              <small>6 Mayo 10:45hs</small>
-                            </div>
-                            <p class="mb-1">De Lucas Rodriguez / 20374862570</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Constitución de plazo fijo</h5>
-                              <small>28 Abril 19:07hs</small>
-                            </div>
-                            <p class="mb-1">Plazo fijo tradicional.</p>
-                        </a>
-                        <a href="#" class="boton-primario d-flex justify-content-center btn mt-2">Ver todos</a>
-                    </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar Soja</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolarsoja-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolarsoja-venta">300,00</p></h2>
+              </div>
             </div>
-
-            
-            <div class="col-12 col-md-6 mb-3 px-2">
-                <h2 class="my-3">Cotización Dólar</h2>
-                <p class="text-center">Última actualización: </p>
-                <div class="row justify-content-center">
-                  <div class="col-5 mb-3 mx-2 px-0 card text-center">
-                    <div class="card-header card-grey">
-                      DOLAR OFICIAL
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div id="valorOficialCompra" class="col-6 col-md-6 px-0">
-                        </div>
-                        <div id="valorOficialVenta" class="col-6 col-md-6 px-0">
-                          </div>
-                      </div>      
-                      
-                    </div>
-                    <div id="variacionOficial" class="card-footer text-muted">
-                    </div>
-                  </div>
-                  <div class="col-5 mb-3 mx-2 px-0 card text-center">
-                    <div class="card-header card-grey">
-                      DOLAR BLUE
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div id="valorBlueCompra" class="col-6 col-md-6 px-0">
-                        </div>
-                        <div id="valorBlueVenta" class="col-6 col-md-6 px-0">
-                        </div>
-                      </div>      
-                      
-                    </div>
-                    <div id="variacionBlue" class="card-footer text-muted">
-                    </div>
-                  </div>
-                </div>
-                <a href="cotizaciones.html" class="boton-primario d-flex justify-content-center btn mt-2">Ver todas las cotizaciones</a>
-
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar Turista</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolarturista-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolarturista-venta">300,00</p></h2>
+              </div>
             </div>
+          </article>
         </div>
-        
-
-
-    </section>
-      <footer class="bg-light text-center text-lg-start">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Navegacion</h5>
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="" class="text-dark">Home</a>
-              </li>
-
-              <li>
-                <a href="" class="text-dark">Centro de Ayuda</a>
-              </li>
-
-              <li>
-                <a href="" class="text-dark">Robo o extravío</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Sombre nosotros</h5>
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="" class="text-dark">¿Quienes somos?</a>
-              </li>
-
-              <li>
-                <a href="" class="text-dark">Servicios</a>
-              </li>
-
-              <li>
-                <a href="" class="text-dark">Contacto</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar Bolsa</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolarbolsa-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolarbolsa-venta">300,00</p></h2>
+              </div>
+            </div>
+          </article>
         </div>
-        <!--Grid row-->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <article class="card card-grey px-2 mt-4">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Dolar CCL</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <h2 class="monto"><strong>Compra </strong><p id="dolarccl-compra">300,00</p></h2>
+                <h2 class="monto"><strong>Venta </strong><p id="dolarccl-venta">300,00</p></h2>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <a class="text-dark"
-          >Copyright 2001-2022 ITBANK. Todos los derechos reservados. Prohibida
-          la<br />
-          duplicacion, distribucio o almacenamiento en cualquier media.</a
-        >
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-    <script src="home.js"></script>
-</body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"
-  ></script>
+    </main>
+  </body>
+  <script src="./scripts/cotizaciones.js"></script>
 </html>
-
-
-
-

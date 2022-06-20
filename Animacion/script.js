@@ -10,7 +10,7 @@ loader.style.opacity=0;
 function pagina(){
     location.href="home.html"
 }
-setTimeout(pagina(),{},5000)
+setTimeout(pagina(),{},10000)
 
 
 

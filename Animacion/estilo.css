@@ -1,0 +1,29 @@
+.redondo{
+width: 200px;
+height: 200px;
+border-radius: 100%;
+background-color: green;
+position:absolute;top:30%;left:50%;
+animation-name: cambiarColor;
+animation-duration: 5s;
+opacity: 0;
+}
+@keyframes cambiarColor{
+0%{
+    background-color: rgb(6, 78, 160);
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+80%{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+100%{}
+}    
+@keyframes Exito {
+    
+}

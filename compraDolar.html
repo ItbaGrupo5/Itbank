@@ -12,6 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
+ <style>
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+     -webkit-appearance: none; 
+     margin: 0; 
+    }
+
+    input[type=number] { -moz-appearance:textfield; }
+ </style>
 </head>
 <body>
     <header>
@@ -164,7 +173,7 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="compraDolar.html"
+                        <a class="dropdown-item" href="#"
                           ><img src="" alt="" /><svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -410,162 +419,90 @@
         <!-- encabezado de la página-->
         <div class="row d-flex align-items-center">
             <div class="col-6 mt-4 mb-3">
-                <h1 class="fw-bold">Hola Sofía</h1>
+                <h1 class="fw-bold">Compra/Venta de monedas</h1>
             </div>
-            <div class="col-6 mt-4 mb-3">
-                <div class="buscador">
-                    <input type="search" id="search" placeholder="Buscar operaciones, servicios y consultas" />
-                    <button class="icon-search"><i class="fa fa-search"></i></button>
-                </div>
-                
-            </div>
+           
         </div>
             <!-- cards cuenta-->
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-6 mb-3">
                     <article class="card card-black px-2">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="card-title fw-bold">045-654753/8</h3>
-                                <a href="#" class="boton-icono btn btn-light rounded-circle">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <h6>CAJA DE AHORROS EN PESOS</h4>
-                       
-                            <h4 class="saldo-cuenta text-end"><strong>$ 15.000,00</strong></h4>
                             
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">Luz - Edenor</h3>
-                            <h6>SERVICIO FRECUENTE</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 937,57</strong></p>
-                                <p class="fecha text-end fw-bold"><small>Vence el 17/05</small></p>
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Pagar</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">SUBE</h3>
-                            <p>SERVICIO FRECUENTE</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 300,00</strong></p>
-                                
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Repetir carga</a>
+                            <form action="" class="">
+                            <h6>Seleccione cuenta origen: <select name="cuentas" id="origen" selected="Seleccione una cuenta">
+                                                             <option value="">Elige una cuenta</option>
+                                                             <option value="value1">045-654753/8</option>
+
+                                                          </select>
+                            </h6>
+                            <h6>Seleccione cuenta destino: <select name="cuentas" id="origen" selected="Seleccione una cuenta">
+                                <option value="">Elige una cuenta</option>
+                                <option value="value1">045-654753/8</option>
+
+                             </select></h4>
+                            <h6>Monto en pesos: $ <input type="number" id="valuepesos"placeholder="0.00" onchange="calcular(this.value);" min="1"  step="any" /></h4> 
+                            <h6>Monto en dolares: $ <input type="" id="valordolar" placeholder="0.00"  disabled/></h4>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card-title fw-bold"></h3>
+                                    <a href="#"class="boton-icono btn btn-light rounded-circle">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                        </form>
                         </div>
                     </article>
                 </div>
             </div>
 
         <!-- accesos directos-->
-        <h2 class="my-3">Accesos directos</h2>
-        <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-arrow-right-arrow-left mx-3"></i>
-                        <h4>Transferencias</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-wallet mx-3"></i>
-                        <h4>Pago de servicios</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-piggy-bank mx-3"></i>
-                        <h4>Inversiones</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-money-check-dollar mx-3"></i>
-                        <h4>Préstamos</h4>
-                    </a>
-                </div>
-        </div>
+       
 
         <!-- ult movimientos + carousel-->
         <div class="row">
-            <div class="col-12 col-md-6 mb-3 px-2">
-                <h2 class="my-3">Últimos movimientos</h2>
-                
-                    <div class="list-group">
-                        <a href="#" class="list-group-item mb-2">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1 fw-bold">Compra con tarjeta de débito</h5>
-                            <small>16 Mayo 15:20hs</small>
-                          </div>
-                          <p class="mb-1">Garbarino - tarj nro. 6842</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Transferencia recibida</h5>
-                              <small>6 Mayo 10:45hs</small>
-                            </div>
-                            <p class="mb-1">De Lucas Rodriguez / 20374862570</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Constitución de plazo fijo</h5>
-                              <small>28 Abril 19:07hs</small>
-                            </div>
-                            <p class="mb-1">Plazo fijo tradicional.</p>
-                        </a>
-                        <a href="#" class="boton-primario d-flex justify-content-center btn mt-2">Ver todos</a>
-                    </div>
-            </div>
+  
 
-            
-            <div class="col-12 col-md-6 mb-3 px-2">
-                <h2 class="my-3">Cotización Dólar</h2>
-                <p class="text-center">Última actualización: </p>
-                <div class="row justify-content-center">
-                  <div class="col-5 mb-3 mx-2 px-0 card text-center">
-                    <div class="card-header card-grey">
-                      DOLAR OFICIAL
+            <div class="col-12 col-md-12 mb-3 px-2">
+                <h2 class="my-3">Descubrí ITBANK</h2>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div id="valorOficialCompra" class="col-6 col-md-6 px-0">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" >
+                        <img src="Images/descubri-01.webp" class="d-block w-100" alt="Promoción de seguro de celulares">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Asegurá tu celular</h5>
+                          <p>Aprovechá esta oferta y contrata un seguro en pocos pasos.</p>
                         </div>
-                        <div id="valorOficialVenta" class="col-6 col-md-6 px-0">
-                          </div>
-                      </div>      
-                      
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/descubri-02.jpeg" class="d-block w-100" alt="Sumate a nuestro club de beneficios">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>ITBANK Plus</h5>
+                          <p>¿Qué estas esperando para unirte a nuestro club de beneficios?</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/descubri-03.jpeg" class="d-block w-100" alt="Paga tus servicios online">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Pagos Online</h5>
+                          <p>Pagá tus servicios desde la comodidad de tu hogar.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div id="variacionOficial" class="card-footer text-muted">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <div class="col-5 mb-3 mx-2 px-0 card text-center">
-                    <div class="card-header card-grey">
-                      DOLAR BLUE
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div id="valorBlueCompra" class="col-6 col-md-6 px-0">
-                        </div>
-                        <div id="valorBlueVenta" class="col-6 col-md-6 px-0">
-                        </div>
-                      </div>      
-                      
-                    </div>
-                    <div id="variacionBlue" class="card-footer text-muted">
-                    </div>
-                  </div>
-                </div>
-                <a href="dolar.html" class="boton-primario d-flex justify-content-center btn mt-2">Ver todas las cotizaciones</a>
-
             </div>
         </div>
         
@@ -629,14 +566,13 @@
       </div>
       <!-- Copyright -->
     </footer>
-
-    <script src="home.js"></script>
 </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
   ></script>
+  <script src="calcular.js"></script>
 </html>
 
 

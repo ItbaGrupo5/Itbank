@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homebanking Itbank</title>
+    <title>Homebanking Itbank - Mis cuentas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="shortcut icon" href="./images/icologo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f69b4029b3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +49,7 @@
                     >
                       <p class="ps-4">CUENTAS</p>
                       <li class="">
-                        <a class="dropdown-item" href="miscuentas.html"
+                        <a class="dropdown-item" href="#"
                           ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -399,7 +398,7 @@
             <div class="col-2 pagination justify-content-end">
                 <div id="perfil" class="d-inline-flex flex-row my-2 px-3 align-items-center rounded-pill">
                 <img src="Images/sofia.png" alt="Imagen de usuario" id="user-photo" class="rounded-circle" width="40" height="40" />
-                <h4 id="nombre-perfil" class="p-2 fw-bold ">Sofía</h4>
+                <h4 id="nombre-perfil" class="p-2 fw-bold d-none d-sm-none d-md-block ">Sofía</h4>
                 <i id="icono-perfil" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
@@ -408,22 +407,16 @@
     </header>
     <section class="container">
         <!-- encabezado de la página-->
-        <div class="row d-flex align-items-center">
-            <div class="col-6 mt-4 mb-3">
-                <h1 class="fw-bold">Hola Sofía</h1>
+        <div class="row d-flex align-items-center ">
+            <div class="col-10 mt-4 mb-3">
+                <h1 class="fw-bold">Mis cuentas</h1>
             </div>
-            <div class="col-6 mt-4 mb-3">
-                <div class="buscador">
-                    <input type="search" id="search" placeholder="Buscar operaciones, servicios y consultas" />
-                    <button class="icon-search"><i class="fa fa-search"></i></button>
-                </div>
-                
-            </div>
+            
         </div>
             <!-- cards cuenta-->
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 mb-3">
-                    <article class="card card-black px-2">
+                <div class="  col-12 col-md-12 col-lg-4 mb-3 p-6">
+                    <article class="card card-black px-2 h-">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h3 class="card-title fw-bold">045-654753/8</h3>
@@ -438,92 +431,39 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">Luz - Edenor</h3>
-                            <h6>SERVICIO FRECUENTE</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 937,57</strong></p>
-                                <p class="fecha text-end fw-bold"><small>Vence el 17/05</small></p>
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Pagar</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <article class="card card-grey px-2">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold">SUBE</h3>
-                            <p>SERVICIO FRECUENTE</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="monto"><strong>$ 300,00</strong></p>
-                                
-                            </div>
-                            <a href="#" class="boton-primario d-flex justify-content-center btn">Repetir carga</a>
-                        </div>
-                    </article>
-                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-3 ">
+                  <article class="card card-black px-2">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <h3 class="card-title fw-bold">045-654753/8</h3>
+                              <a href="#" class="boton-icono btn btn-light rounded-circle">
+                                  <i class="fa-solid fa-angle-right"></i>
+                              </a>
+                          </div>
+                          <h6>CAJA DE AHORROS EN DOLARES</h4>
+                     
+                          <h4 class="saldo-cuenta text-end"><strong>U$D 2.300,73</strong></h4>
+                          
+                      </div>
+                  </article>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4 mb-3 ">
+                <article class="card card-black px-2">
+                    <div class="card-body">
+                       <div><br></div>
+                        <h6>Obtené una Caja de Ahorro nueva</h4>
+                   
+                       <a class="text-decoration-none" href="#"> <h4 class="saldo-cuenta text-center"><strong>Solicitar</strong></h4> 
+                      </a>
+                    </div>
+                </article>
+            </div>
+                
             </div>
 
-        <!-- accesos directos-->
-        <h2 class="my-3">Accesos directos</h2>
+      
         <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-arrow-right-arrow-left mx-3"></i>
-                        <h4>Transferencias</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-wallet mx-3"></i>
-                        <h4>Pago de servicios</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-piggy-bank mx-3"></i>
-                        <h4>Inversiones</h4>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <a href="#" class="acceso d-flex align-items-center justify-content-start btn py-3">
-                        <i class="fa-solid fa-money-check-dollar mx-3"></i>
-                        <h4>Préstamos</h4>
-                    </a>
-                </div>
-        </div>
-
-        <!-- ult movimientos + carousel-->
-        <div class="row">
-            <div class="col-12 col-md-6 mb-3 px-2">
-                <h2 class="my-3">Últimos movimientos</h2>
-                
-                    <div class="list-group">
-                        <a href="#" class="list-group-item mb-2">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1 fw-bold">Compra con tarjeta de débito</h5>
-                            <small>16 Mayo 15:20hs</small>
-                          </div>
-                          <p class="mb-1">Garbarino - tarj nro. 6842</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Transferencia recibida</h5>
-                              <small>6 Mayo 10:45hs</small>
-                            </div>
-                            <p class="mb-1">De Lucas Rodriguez / 20374862570</p>
-                        </a>
-                        <a href="#" class="list-group-item mb-2">
-                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 fw-bold">Constitución de plazo fijo</h5>
-                              <small>28 Abril 19:07hs</small>
-                            </div>
-                            <p class="mb-1">Plazo fijo tradicional.</p>
-                        </a>
-                        <a href="#" class="boton-primario d-flex justify-content-center btn mt-2">Ver todos</a>
-                    </div>
+            <div class="col-12 col-md-3 mb-3 px-2">
             </div>
 
             <div class="col-12 col-md-6 mb-3 px-2">

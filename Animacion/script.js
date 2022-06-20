@@ -8,7 +8,7 @@ loader.style.opacity=0;
 },3000);})
 
 function pagina(){
-    location.href="Itbank/home.html"
+    location.href="/home.html"
 }
 setTimeout(pagina(),{},5000)
 

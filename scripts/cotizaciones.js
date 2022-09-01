@@ -15,8 +15,6 @@ function updatePrices(dolar, data) {
   sell.innerText = data.casa.venta;
   buy.innerText = data.casa.compra;
   actualizacion.innerText = fecha;
-  console.log(actualizacion);
-  console.log(fecha);
 }
 
 //Encuentra y retorna el objeto de cada dolar por el valor de la propiedad nombre.
